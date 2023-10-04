@@ -60,7 +60,7 @@ def index():
         """SELECT COUNT (*) FROM history WHERE user_id = ? AND label = "NEGATIVE";""", session["user_id"],
     )
 
-    if totalTexts! = 0:
+    if totalTexts != 0:
         negPercent = negNumber[0]["COUNT (*)"] / totalTexts * 100
         negPercent = round(negPercent, 2)
     else:
