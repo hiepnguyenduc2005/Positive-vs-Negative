@@ -52,14 +52,21 @@ def index():
         """SELECT COUNT (*) FROM history WHERE user_id = ? AND label = "POSITIVE";""", session["user_id"],
     )
 
-    posPercent = posNumber[0]["COUNT (*)"] / totalTexts * 100
-    posPercent = round(posPercent, 2)
+    if totalTexts != 0:
+        posPercent = posNumber[0]["COUNT (*)"] / totalTexts * 100
+        posPercent = round(posPercent, 2)
+    else:
+        posPercent = 0.00
 
     negNumber = db.execute(
         """SELECT COUNT (*) FROM history WHERE user_id = ? AND label = "NEGATIVE";""", session["user_id"],
     )
-    negPercent = negNumber[0]["COUNT (*)"] / totalTexts * 100
-    negPercent = round(negPercent, 2)
+
+    if totalTexts! = 0:
+        negPercent = negNumber[0]["COUNT (*)"] / totalTexts * 100
+        negPercent = round(negPercent, 2)
+    else:
+        negPercent = 0.00
 
     return render_template("index.html", totalTexts = totalTexts, positive = positive, negative = negative, posPercent = posPercent, negPercent = negPercent)                                                                                                                                                                                                                                                                 
 
