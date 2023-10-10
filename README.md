@@ -1,7 +1,15 @@
 # Positive vs. Negative
-#### Video Demo:  https://youtu.be/2GHb9TB7bJU
-#### Description: http://positivevsnegative.pythonanywhere.com/
+## Usage: 
+### Video Demo: https://youtu.be/2GHb9TB7bJU/
+### Website Preview: http://positivevsnegative.pythonanywhere.com/
+### Quick Start:
+1. Clone the repository
+2. Install Python libraries with '''pip install -r requirements.txt
+3. Run '''flask run
+4. Click on the local server link
 
+
+## Description
 ### Introduction
 The **Positive vs. Negative** program is a groundbreaking **CS50x** final project and web application that harnesses the power of **_Transformer_** models, introduced by Google Brain in 2017, to analyze the sentiment of text. This program is built on Python, Flask, Jinja, HTML, CSS, and Bootstrap. It offers _sentiment analysis_ and _natural language processing (NLP)_ capabilities with wide-ranging applications in user experience enhancement. It is also crucial to the author a first personal project and offer better understanding in _Cognitive AI_.
 
