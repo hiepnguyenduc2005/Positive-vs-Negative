@@ -4,8 +4,8 @@
 ### Website Preview: http://positivevsnegative.pythonanywhere.com/
 ### Quick Start:
 1. Clone the repository
-2. Install Python libraries with ```bash pip install -r requirements.txt ```
-3. Run ```bash flask run ```
+2. Install Python libraries with ```pip install -r requirements.txt```
+3. Run ```flask run```
 4. Click on the local server link
 
 
