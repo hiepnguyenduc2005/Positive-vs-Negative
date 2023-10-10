@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+    <table class="table table-triped">
+        <thead>
+            <tr>
+                <th class="text-center">Text</th>
+                <th class="text-center">Key words</th> 
+                <th class="text-center">Guess</th>
+                <th class="text-center">Prediction</th>
+                <th class="text-center">Score</th>
+                <th class="text-center">Edit</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for t in history %}
+                <tr>
+                    <td class="text-start">{{ t.text }}</td>
+                    <td class="text-start">{{ t.keyWords }}</td>
+                    <td class="text-center">{{ t.guess }}</td>
+                    <td class="text-center">{{ t.label }}</td>
+                    <td class="text-center">{{ t.score }}</td>
+                    <td class="text-center">
+                        <form action="/remove" method="post">
+                            <input name="id" type="hidden" value="{{ t.id }}">
+                            <button type="submit">Remove</button>
+                        </form>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

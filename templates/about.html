@@ -1,0 +1,87 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    About
+{% endblock %}
+
+{% block main %}
+<h1>About Positive vs. Negative</h1>
+<h2>Introduction</h2>
+<p style="text-align: left;">
+    The <b><i style="color:blue;">Positive</i> vs. <i style="color:red;">Negative</i></b> program is a groundbreaking 
+    <b><a href="">CS50x</a></b> final project and web application that harnesses the power of <b> 
+    <a href="https://github.com/huggingface/transformers">Transformer</a></b> models, introduced by <i id="multicolor-text">Google 
+    Brain</i> in 2017, to analyze the sentiment of text. This program is built on Python, Flask, Jinja, HTML, CSS, and Bootstrap. 
+    It offers sentiment analysis and natural language processing (NLP) capabilities with wide-ranging applications in user experience 
+    enhancement. It is also crucial to the author a first personal project and offer better understanding in Cognitive AI.
+</p>
+
+<p style="text-align: left;">
+    At its core, the <b><i style="color:blue;">Positive</i> vs. <i style="color:red;">Negative</i></b> 
+    program delves into the fascinating field of <i>sentiment analysis</i>, a subdomain of AI and 
+    NLP. Sentiment analysis involves using <i>machine learning</i> techniques to discern and understand the emotions, attitudes, and opinions 
+    conveyed through text. By employing <b>Transformer</b> models, which have revolutionized NLP, this project possesses the ability to not 
+    just interpret the text but also comprehend the underlying sense of others' messages. This endeavor holds profound importance, 
+    as it enables us to delve into the psyche of text authors, explore philosophical dimensions of communication, and conduct detailed 
+    studies on the nuances of authorship and expression. It places a strong emphasis on user safety, ensuring secure 
+    sign-in, and log-out procedures with hashed passwords. Additionally, it saves a history of user searches, allowing users to revisit 
+    their past analyses, highlights key sentimental words, and extracts top sentences. This unique feature aids users in quickly 
+    grasping the emotional essence of the content, making it an invaluable tool for both academics and everyday communication.
+</p>
+
+<p style="text-align: left;">
+    Moreover, the <b><i style="color:blue;">Positive</i> vs. <i style="color:red;">Negative</i></b> program 
+    is designed with an eye toward future expansion. It aims to extend its capabilities by 
+    implementing models tailored for different languages, such as Vietnamese, using models like Pho-Bert. Additionally, it seeks to 
+    explore other utilities of <b>Transformers</b>, from translation to content generation, further harnessing the power of these AI marvels. 
+    User feedback and guesses will be harnessed to improve the model's performance through reinforcement learning, making it increasingly 
+    adept at understanding and analyzing sentiment.
+</p>
+<h2>Instruction</h2>
+<ul>
+    <li><b>Register:</b> To get started, create an account by providing your details. Rest assured, 
+    your password will be securely hashed, ensuring your privacy.</li>
+    <li><b>Login:</b> Use the account you've created to log in and access the program's features. Each user's session 
+    is unique and secured.</li>
+    <li><b>Sample:</b> Explore the sample functionality to get a feel for how the program works. It will help you understand 
+    the application's capabilities.</li>
+    <li><b>Main Page <i>(Log In Required)</i>:</b> Upon logging in, you'll be presented with a summary of the program's usage 
+    and evaluation criteria. This page also highlights its unique features.</li>
+    <li><b>Test <i>(Log In Required)</i>:</b> In this section, input text, and take a guess at the sentiment it conveys. 
+    The program will return its sentiment analysis prediction, and you can add it to your search history.</li>
+    <li><b>History <i>(Log In Required)</i>:</b> Access a history of all your past inputs and analyses. You have the option to delete 
+    specific entries.</li>
+</ul>
+
+<h1>About Author</h1>
+<table>
+    <tr>
+        <td><img src="static/profile.jpg" height=800px></td>
+        <td>
+            <h2>Introduction</h2>
+            <p style="text-align: left;">
+                I am Hiep (Roger) Nguyen, an honors freshman majoring in <b>Computer Science</b> at <a class="link"
+                href="https://www1.villanova.edu/university.html">Villanova University</a>.
+                I also intend to double major in <b>Economics</b> and minor in <b>Cognitive Science</b>, but I have special interest
+                in Education.
+                I am considering a career in <b>Cognitive AI</b> applied in Economics or STEM Education.
+            </p>
+            <p style="text-align: left;">
+
+                <i>My long-term goal is developing a ecosystem where Vietnamese children can access personalized learning
+                    with high quality and zero-cost science resources.</i>
+            </p>
+            <p>__________</p>
+            <p> Yours sincerely,</p>
+            <img src="static/signature.png" height=100 alt="Hiep's signature" id="signature">
+            <p class="text"><b><i>Hiep (Roger) Nguyen</i></b></p>
+            <h2><b>Contacts</b></h2>
+            <ul>
+                <li class="list">Email: <a class="link" href="mailto: hiepnguyenduc2005@gmail.com">hiepnguyenduc2005@gmail.com</a></li>
+                <li class="list">LinkedIn: <a class="link" href="https://www.linkedin.com/in/hiepnguyen-ams/">Hiep Nguyen</a></li>
+            </ul>
+        </td>
+    </tr>
+</table>
+    
+{% endblock %}

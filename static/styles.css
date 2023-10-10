@@ -1,0 +1,134 @@
+/* Size for brand */
+nav .navbar-brand
+{
+    font-size: xx-large;
+}
+
+/* Colors for brand */
+nav .navbar-brand .blue
+{
+    color: #537fbe;
+}
+nav .navbar-brand .red
+{
+    color: #ea433b;
+}
+nav .navbar-brand .orange
+{
+    color: #f28500;
+}
+nav .navbar-brand .green
+{
+    color: #2e944b;
+}
+nav .navbar-brand .white
+{
+    color: #ffffff;
+}
+
+#multicolor-text {
+    background: linear-gradient(to left,
+            #537fbe,
+            #2e944b,
+            #f28500,
+            #ea433b);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+nav .container-fluid{
+    background: #537fbe;
+    margin: 0 0 0 0;
+    border: none;
+    padding: 0;
+    border-top: 4px solid #ea433b;
+    border-bottom: 4px solid #ea433b;
+}
+
+#list {
+    margin-top: -8px;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+.nav-item a:hover {
+    background-color: #ea433b;
+    color: white;
+    text-decoration: none;
+}
+
+button {
+    background-color: #537fbe;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    padding: 4px;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 20%;
+}
+
+ul {
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+h1{
+    background-color: #ea433b;
+    text-align: center;
+    color: white;
+    padding: 1rem;
+}
+h2{
+    background-color: #90ee90;
+    padding: 1rem;
+}
+h2{
+    padding: 1rem;
+}
+h3{
+    text-align: center;
+}
+
+p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+footer {
+    font-weight: 300;
+    justify-content: space-evenly;
+    background-color: #537fbe;
+    border-top: 4px solid #ea433b;
+    border-bottom: 4px solid #ea433b;
+  }
+
+footer > p {
+    margin: 1rem;
+}
+
+footer i {
+    vertical-align: middle;
+}

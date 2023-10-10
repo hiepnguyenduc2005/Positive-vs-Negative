@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Summary
+{% endblock %}
+
+{% block main %}
+    <h1>SUMMARY</h1>
+    <p>Total number of texts: <b>{{totalTexts}}</b></p>
+    <p><i>Positive: <b>{{posPercent}}%</b></i></p>
+    <p><i>Negative: <b>{{negPercent}}%</b></i></p>
+    <table class="table table-triped">
+        <thead>
+            <th class="text-center"><h3 style="color:blue;">Top 5 POSITIVE &#128513; texts</h3></th>
+            <th class="text-center"><h3 style="color:red;">Top 5 NEGATIVE &#128531; texts</h3></th>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="text-start">
+                    <ul>
+                        {% for text in positive %}
+                            <li>{{text.text}}</li>
+                        {% endfor %}
+                    </ul>
+                </td>
+                <td class="text-start">
+                    <ul>
+                        {% for text in negative %}
+                            <li>{{text.text}}</li>
+                        {% endfor %}
+                    </ul>
+                </td>
+            </tr>
+    </table>
+    
+{% endblock %}

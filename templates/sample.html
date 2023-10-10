@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Sample
+{% endblock %}
+
+{% block main %}
+<form action="/sample", method="post">
+    <select name="text">
+        <option disabled selected>Text option</option>
+        {% for text in texts %}
+            <option value="{{ text }}">{{ text }}</option>
+        {% endfor %}
+    </select>
+    <select name="guess">
+        <option disabled selected>Guess option</option>
+        {% for option in options %}
+            <option value="{{ option }}">{{ option }}</option>
+        {% endfor %}
+    </select>
+    <button class="btn btn-primary" type="submit">Submit</button>
+</form>
+    {% if respond == True %}
+        <p>Your chosen text is: <i>{{text}}</i></p>
+        <p>Your guess is <b style="color:blue;">Correct!</b></p>
+        <p><b>Guess:</b> {{ guess }}</p>
+        <p><b>Prediction:</b> {{result['label']}}</p>
+        <p><b>Score:</b> {{score}}</p>
+        <p><i>(probability predicted by model)</i></p>
+        <table class="table table-triped">
+            <thead>
+                <tr>
+                    <th class="text-start">Top words ({{result['label']}})</th>
+                    <th class="text-end">Scores</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for word in storage %}
+                    <tr>
+                        <td class="text-start">{{ word }}</td>
+                        <td class="text-end">{{ storage[word] }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% elif respond == False %}
+        <p>Your chosen text is: <i>{{text}}</i></p>
+        <p>Your guess is <b style="color:red;">Wrong!</b></p>
+        <p>Try again!</p>
+    {% endif %}
+{% endblock %}
