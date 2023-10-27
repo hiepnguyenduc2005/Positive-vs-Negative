@@ -2,8 +2,7 @@
 ## Usage: 
 * **Video Demo:** https://youtu.be/2GHb9TB7bJU/
 * **Website Preview:** http://positivevsnegative.pythonanywhere.com/
-
-## Installation:
+* **Installation:**
 1. Clone the repository
 2. Install Python libraries with ```pip install -r requirements.txt```
 3. Run ```flask run```
