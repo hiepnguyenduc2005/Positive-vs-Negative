@@ -1,7 +1,7 @@
 # Positive vs. Negative
 ## Usage: 
-### Video Demo: https://youtu.be/2GHb9TB7bJU/
-### Website Preview: http://positivevsnegative.pythonanywhere.com/
+* **Video Demo:** https://youtu.be/2GHb9TB7bJU/
+* **Website Preview:** http://positivevsnegative.pythonanywhere.com/
 
 ## Installation:
 1. Clone the repository
